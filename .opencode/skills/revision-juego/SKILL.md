@@ -1,5 +1,5 @@
 ---
-name: Revisión del juego web
+name: revision-juego
 description: Revisa un juego web de preguntas en HTML, CSS y JavaScript sin modificar los archivos.
 ---
 
