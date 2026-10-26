@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebQuest: El Reto de la Cultura Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-card">
+    <header class="game-header">
+      <h1>WebQuest: El Reto de la Cultura Web</h1>
+      <div class="status-bar" aria-live="polite">
+        <span id="question-tracker">Pregunta 1 de 6</span>
+        <span id="score-tracker">Puntos: 0</span>
+      </div>
+    </header>
+
+    <section id="quiz-screen" aria-label="Cuestionario">
+      <h2 id="question-title">Cargando pregunta...</h2>
+      
+      <div id="options-container" class="options-grid" role="group" aria-label="Opciones de respuesta">
+      </div>
+
+      <div id="feedback" class="feedback" aria-live="assertive" role="status"></div>
+
+      <button id="next-btn" class="btn primary-btn hidden">Siguiente pregunta</button>
+    </section>
+
+    <section id="result-screen" class="hidden" aria-label="Resultados de la partida">
+      <h2 id="final-title" tabindex="-1">¡Partida Completada!</h2>
+      <p id="final-score" class="final-score-text"></p>
+      <button id="restart-btn" class="btn primary-btn">Reiniciar partida</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
